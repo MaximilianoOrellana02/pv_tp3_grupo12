@@ -1,0 +1,70 @@
+div .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faecec;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.contenedor h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #151315;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.botones button {
+    background-color: #d19a9a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botones button:hover {
+    background-color: #b06f6f;
+    transform: translateY(-2px);
+}
+
+.lista-productos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #151315;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 1.2rem;
+}
+
+.lista-iva {
+    text-align: start;
+}

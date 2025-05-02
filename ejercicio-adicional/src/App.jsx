@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import './App.css'
+
 function App () {
 
   const [productos, setProductos] = useState([
@@ -38,29 +40,33 @@ function App () {
   };
 
   return (
-    <div>
+    <div className="contenedor">
       <h1>Gestión de Productos</h1>
-      <button onClick={mostrarProductos}>Mostrar en Consola</button>
-      <button onClick={agregarProducto}>Agregar Producto</button>
-      <button onClick={eliminarProductoMasBarato}>Eliminar Más Barato</button>
-
-      <h2>Productos Ordenados por Precio</h2>
-      <ul>
-        {productosOrdenados.map((producto, index) => (
-          <li key={index}>
-            {producto.descripcion} - ${producto.precio.toFixed(2)}
-          </li>
-        ))}
-      </ul>
-
-      <h2>Productos con IVA</h2>
-      <ul>
-        {productosConIva.map((producto, index) => (
-          <li key={index}>
-            {producto.descripcion} - ${producto.precio.toFixed(2)}
-          </li>
-        ))}
-      </ul>
+      <div className="botones">
+        <button onClick={mostrarProductos}>Mostrar en Consola</button>
+        <button onClick={agregarProducto}>Agregar Producto</button>
+        <button onClick={eliminarProductoMasBarato}>Eliminar Más Barato</button>
+      </div>
+      <div className="lista-productos">
+        <h2>Productos Ordenados por Precio</h2>
+        <ul>
+          {productosOrdenados.map((producto, index) => (
+            <li key={index}>
+              {producto.descripcion} - ${producto.precio.toFixed(2)}
+            </li>
+          ))}
+        </ul>
+      </div>  
+      <div className="lista-iva">
+        <h2>Productos con IVA</h2>
+        <ul>
+          {productosConIva.map((producto, index) => (
+            <li key={index}>
+            { producto.descripcion} - ${producto.precio.toFixed(2)}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
