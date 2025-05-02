@@ -1,22 +1,23 @@
+
+body > div {
+    background-color: #e0e0e0;
+    padding: 70px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
 h1 {
     --c: rgb(216, 46, 23);
     color: var(--c);
     font-size: 16px;
     border: 0.3em solid var(--c);
     border-radius: 0.5em;
-    width: 12em;
-    height: 3em;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: sans-serif;
-    letter-spacing: 0.1em;
     text-align: center;
     line-height: 3em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    margin: 1em;
 }
 
 
@@ -25,9 +26,7 @@ h2{
     color: var(--c);
     font-size: 16px;
     border: 0.3em solid var(--c);
-    border-radius: 0.5em;
-    width: 12em;
-    height: 3em;
+    border-radius: 0.5em; 
     text-transform: uppercase;
     font-weight: bold;
     font-family: sans-serif;
@@ -50,21 +49,30 @@ input{
     text-align: center;
 }
 button{
-    
+    background-color: rgb(216, 46, 23);
+    color: white;
+    padding: 10px 15px;
     border: none;
-    
-    padding: 8px 16px;
-    text-decoration: none;
-    margin: 4px 2px;
     cursor: pointer;
-    text-align: center;
-    line-height: 2em;
+    font-size: 16px;
     font-family: sans-serif;
+    margin: 20px;
+    border-radius: 5px;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 li {
     font-size: 16px;
     color:rgb(7, 7, 8);
     text-align: center;
     font-family: sans-serif;
-    
+    margin: 5px 10px;
 }
